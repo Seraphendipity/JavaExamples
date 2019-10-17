@@ -18,6 +18,7 @@ public  class App {
     //try {
     public static void main(String args[]) {
         EMSView view = new EMSView("cmd"); // Promote a MCV separation
+        EMSController controller = new EMSController(view); // Promote a MCV separation
         String line = null;
         String dbName = "uabEmployee.txt";
         String dbPath = "./resources/";  
@@ -26,8 +27,6 @@ public  class App {
         EmployeeCollection ec = new EmployeeCollection(roles);
 		try {
 			iFile = new FileReader(dbPath+dbName);
-
-   
             BufferedReader reader = new BufferedReader(iFile);
             while((line = reader.readLine()) != null) {
                 ec.addEmployee(line);
@@ -35,31 +34,8 @@ public  class App {
             reader.close();
 
             view.showMenu(ec.getEmployees());
+            controller.menuOptions(ec);
 
-            Boolean bInteract = true;
-            while(bInteract) {
-                Scanner input = new Scanner(System.in);  // Create a Scanner object
-                System.out.println("What would you like to do? ");
-                String iLine = input.nextLine();  // Read user input
-
-                String cmd = iLine.split(" ")[0].toLowerCase();
-                switch (cmd) {
-                    case "help":
-                        view.showMenu(ec.getEmployees());
-                        break;
-                    case "exit":
-                        bInteract = false;
-                        break;
-                    case "add":
-                        ec.addEmployee(iLine);
-                        break;
-                    case "rem":
-                        ///removeEmployee(iLine);
-                        break;
-                    default:
-                        System.out.println("Unrecognized command: "+iLine);
-                }
-        }
 
 		} catch (FileNotFoundException e2) {
 			e2.printStackTrace();
