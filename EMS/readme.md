@@ -85,10 +85,10 @@ The `Nurse` was a bit different thematically due to their fourth input arguement
 ### Data Typing
 As a sidenote, strings were used for almost all data types in classes, though conceivably Integers could be used for such thing as the nurse's patient count and perhaps ID. However, to keep things simple and reduce error-types, strings were simply used, as ID's were not expicitly stated to be only of integer types.
 
-### MCV: Model View Contorller
+### MCV: Model View Controller
 With limited success, a MCV approach was attempted at seperating functionality within the system. It is not perfect and the controller directly outputs to console, violating MCV, but it is still mostly modular and reduces the clutter of the main `App` class.
 
-### HashMaps and ArrayLists Galore
+### `HashMap`s and `ArrayList`s Galore
 Notably, I used a good bit of `HashMap`s and `ArrayList`s. The ArrayLists, while less efficient than normal `Array`s, allow easy addition and removal of parts. The `HashMap` and `EmployeeCollection` that stores the role `ArrayList`s serve to help organize each of the `ArrayList`s and "simplify" (with limited success) the menu view of the system.
 
 A `HashMap` is also used at another point to store strings in the view; again, this was as a result of wanting to output a header with the count of children *before* the children are listed (and simultaneously do printing while listing the items, which is not necessarily ideal).
