@@ -28,10 +28,12 @@ public class NumericArrayUtils {
 
 	public static <T> T getSum(T[] array) {
 		T sum = array[0];
+		
         return sum;
 	}
 	public static <T> T getAvg(T[] array) {
-        return NumericArrayUtils.getSum(array);///array.length;
+		()
+        return NumericArrayUtils.getSum(array)/array.length;
 	}
 
 	public static <T> T[] getSumAvg(T[] array) {
