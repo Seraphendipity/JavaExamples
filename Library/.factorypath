@@ -1,0 +1,7 @@
+<factorypath>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/walterjwhite/java/modules/serialization/api/service/0.0.17/service-0.0.17.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/walterjwhite/java/modules/serialization/api/model/0.0.17/model-0.0.17.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/com/walterjwhite/java/infrastructure/datastore/api/model/0.0.17/model-0.0.17.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar" enabled="true" runInBatchMode="false"/>
+    <factorypathentry kind="VARJAR" id="M2_REPO/org/projectlombok/lombok/1.18.2/lombok-1.18.2.jar" enabled="true" runInBatchMode="false"/>
+</factorypath>
