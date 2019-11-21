@@ -111,7 +111,7 @@ public final class App {
     }
     public static void remNode(LinkedList<Integer> list) throws FileNotFoundException {
         Integer id = getResponse("What number (by ID order in list) would you like to remove?");
-        if (node == null) {
+        if (id == null) {
             System.out.println("Cannot remove item.");
         } else {
             list.remove(id);
