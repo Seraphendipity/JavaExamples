@@ -7,7 +7,7 @@ public abstract class lElement
    /**
      * @return the title
      */
-    public String getId() {
+    public int getId() {
         return id;
     }
 }

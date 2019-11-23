@@ -2,8 +2,8 @@ package library;
 
 public class Registration extends lElement
 {
-    Visitor visitorId;
-    Book bookId;
+    int visitorId;
+    int bookId;
     
     public Registration(int visitorId, int bookId) {
         this.visitorId = visitorId;
@@ -13,28 +13,28 @@ public class Registration extends lElement
     /**
      * @return the visitorId
      */
-    public Visitor getVisitorId() {
+    public int getVisitorId() {
         return visitorId;
     }
 
     /**
      * @param visitorId the visitorId to set
      */
-    public void setVisitorId(Visitor visitorId) {
+    public void setVisitorId(int visitorId) {
         this.visitorId = visitorId;
     }
 
     /**
      * @return the bookId
      */
-    public Book getBookId() {
+    public int getBookId() {
         return bookId;
     }
 
     /**
      * @param bookId the bookId to set
      */
-    public void setBookId(Book bookId) {
+    public void setBookId(int bookId) {
         this.bookId = bookId;
     }
 }

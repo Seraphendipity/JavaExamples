@@ -21,9 +21,9 @@
   <dependencies>
 
     <dependency>
-      <groupId>com.walterjwhite.java.modules.serialization.modules</groupId>
+      <groupId>com.fasterxml.jackson.core</groupId>
       <artifactId>jackson-databind</artifactId>
-      <version>0.0.17</version>
+      <version>2.10.1</version>
     </dependency>
 
     <dependency>
@@ -78,5 +78,18 @@
         </plugin>
       </plugins>
     </pluginManagement>
+
+    <resources>
+      <resource>
+        <directory>resources/</directory>
+        <!-- <includes>
+          <include>[resource file #1]</include>
+          <include>[resource file #2]</include>
+          <include>[resource file #3]</include>
+          <include>[resource file #n]</include>
+        </includes> -->
+      </resource>
+    </resources>
+
   </build>
 </project>
